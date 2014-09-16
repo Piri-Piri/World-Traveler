@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  World Traveler
+//  World Traweler
 //
-//  Created by David Pirih on 17.09.14.
+//  Created by David Pirih on 16.09.14.
 //  Copyright (c) 2014 Piri-Piri. All rights reserved.
 //
 
