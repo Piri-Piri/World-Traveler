@@ -18,6 +18,10 @@
 static NSString *const kCLIENTID = @"SBBS3V3OESBOWFN31TZHNGGWWWQKATYH2TXOU5BCK25MQSRE";
 static NSString *const kCLIENTSECRET = @"IO1UMEGESICFUA2CX3SC0EL5R2UVYLWZPXSVZZ0ZR2DWZYEC";
 
+#define latitudeOffset 0.05
+#define longitudeOffset 0.05
+
+
 @interface PPListViewController () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) NSArray *venues;
@@ -74,12 +78,11 @@ static NSString *const kCLIENTSECRET = @"IO1UMEGESICFUA2CX3SC0EL5R2UVYLWZPXSVZZ0
 #pragma mark - CLLocationManager Delegate
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    NSLog(@"--");
     CLLocation *location = [locations lastObject];
     [self.locationManager stopUpdatingLocation];
     
     //NSLog(@"%f,%f", location.coordinate.latitude, location.coordinate.longitude);
-    [[PPFourSquareSessionManager sharedClient] GET:[NSString stringWithFormat:@"venues/search?ll=%f,%f", location.coordinate.latitude, location.coordinate.longitude] parameters:@{@"client_id" : kCLIENTID, @"client_secret" :kCLIENTSECRET, @"v" : @"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
+    [[PPFourSquareSessionManager sharedClient] GET:[NSString stringWithFormat:@"venues/search?ll=%f,%f", location.coordinate.latitude + latitudeOffset, location.coordinate.longitude + longitudeOffset] parameters:@{@"client_id" : kCLIENTID, @"client_secret" :kCLIENTSECRET, @"v" : @"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSArray *venues = responseObject;
         self.venues = venues;
         [self.tableView reloadData];

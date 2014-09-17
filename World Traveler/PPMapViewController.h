@@ -15,4 +15,9 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) Venue *venue;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+
+
+- (IBAction)showDirectionsAction:(UIBarButtonItem *)sender;
 @end

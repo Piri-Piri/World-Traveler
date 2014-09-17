@@ -30,6 +30,8 @@
 		63580F8A19C8F9D200740D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63580F8919C8F9D200740D3E /* Foundation.framework */; };
 		63580F8C19C8FA1200740D3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63580F8B19C8FA1200740D3E /* UIKit.framework */; };
 		63DBD40519C9A7D700610770 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DBD40419C9A7D700610770 /* CoreLocation.framework */; };
+		63EEBFD819CA08CC00742022 /* PPDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EEBFD719CA08CC00742022 /* PPDirectionsViewController.m */; };
+		63EEBFDB19CA289700742022 /* PPDirectionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EEBFDA19CA289700742022 /* PPDirectionsListViewController.m */; };
 		CB88D83CDEC543AC80B2157F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E18DF82E4AF400CADD649A9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,10 @@
 		63580F8919C8F9D200740D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63580F8B19C8FA1200740D3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63DBD40419C9A7D700610770 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63EEBFD619CA08CC00742022 /* PPDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDirectionsViewController.h; sourceTree = "<group>"; };
+		63EEBFD719CA08CC00742022 /* PPDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDirectionsViewController.m; sourceTree = "<group>"; };
+		63EEBFD919CA289700742022 /* PPDirectionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDirectionsListViewController.h; sourceTree = "<group>"; };
+		63EEBFDA19CA289700742022 /* PPDirectionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDirectionsListViewController.m; sourceTree = "<group>"; };
 		7E18DF82E4AF400CADD649A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +186,10 @@
 				63580F5D19C8F66900740D3E /* PPListViewController.m */,
 				63580F5E19C8F66900740D3E /* PPMapViewController.h */,
 				63580F5F19C8F66900740D3E /* PPMapViewController.m */,
+				63EEBFD619CA08CC00742022 /* PPDirectionsViewController.h */,
+				63EEBFD719CA08CC00742022 /* PPDirectionsViewController.m */,
+				63EEBFD919CA289700742022 /* PPDirectionsListViewController.h */,
+				63EEBFDA19CA289700742022 /* PPDirectionsListViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -234,8 +244,8 @@
 		63580F7319C8F73100740D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63DBD40419C9A7D700610770 /* CoreLocation.framework */,
 				63580F7B19C8F90500740D3E /* Vendor */,
+				63DBD40419C9A7D700610770 /* CoreLocation.framework */,
 				63580F8B19C8FA1200740D3E /* UIKit.framework */,
 				63580F8919C8F9D200740D3E /* Foundation.framework */,
 				63580F8719C8F99900740D3E /* CoreGraphics.framework */,
@@ -404,6 +414,7 @@
 				63580F6F19C8F66900740D3E /* WorldTravelerModel.xcdatamodeld in Sources */,
 				63580F8219C8F91700740D3E /* AFMMRecordResponseSerializer.m in Sources */,
 				63580F2F19C8F56E00740D3E /* AppDelegate.m in Sources */,
+				63EEBFDB19CA289700742022 /* PPDirectionsListViewController.m in Sources */,
 				63580F6A19C8F66900740D3E /* PPFourSquareSessionManager.m in Sources */,
 				63580F6819C8F66900740D3E /* Location.m in Sources */,
 				63580F8119C8F91700740D3E /* AFMMRecordResponseSerializationMapper.m in Sources */,
@@ -412,6 +423,7 @@
 				63580F6B19C8F66900740D3E /* PPListViewController.m in Sources */,
 				63580F6619C8F66900740D3E /* Contact.m in Sources */,
 				63580F6719C8F66900740D3E /* FSCategory.m in Sources */,
+				63EEBFD819CA08CC00742022 /* PPDirectionsViewController.m in Sources */,
 				63580F6D19C8F66900740D3E /* PPRecord.m in Sources */,
 				63580F2C19C8F56E00740D3E /* main.m in Sources */,
 			);
