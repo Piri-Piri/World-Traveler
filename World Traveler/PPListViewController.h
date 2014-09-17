@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PPListViewController : UIViewController
+@interface PPListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

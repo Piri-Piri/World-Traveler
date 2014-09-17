@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Venue.h"
 
 @interface PPMapViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) Venue *venue;
 
 @end

@@ -29,6 +29,7 @@
 		63580F8819C8F99900740D3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63580F8719C8F99900740D3E /* CoreGraphics.framework */; };
 		63580F8A19C8F9D200740D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63580F8919C8F9D200740D3E /* Foundation.framework */; };
 		63580F8C19C8FA1200740D3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63580F8B19C8FA1200740D3E /* UIKit.framework */; };
+		63DBD40519C9A7D700610770 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DBD40419C9A7D700610770 /* CoreLocation.framework */; };
 		CB88D83CDEC543AC80B2157F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E18DF82E4AF400CADD649A9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		63580F8719C8F99900740D3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		63580F8919C8F9D200740D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63580F8B19C8FA1200740D3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63DBD40419C9A7D700610770 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7E18DF82E4AF400CADD649A9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DBD40519C9A7D700610770 /* CoreLocation.framework in Frameworks */,
 				63580F8C19C8FA1200740D3E /* UIKit.framework in Frameworks */,
 				63580F8A19C8F9D200740D3E /* Foundation.framework in Frameworks */,
 				63580F8819C8F99900740D3E /* CoreGraphics.framework in Frameworks */,
@@ -231,6 +234,7 @@
 		63580F7319C8F73100740D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63DBD40419C9A7D700610770 /* CoreLocation.framework */,
 				63580F7B19C8F90500740D3E /* Vendor */,
 				63580F8B19C8FA1200740D3E /* UIKit.framework */,
 				63580F8919C8F9D200740D3E /* Foundation.framework */,
@@ -477,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -512,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
