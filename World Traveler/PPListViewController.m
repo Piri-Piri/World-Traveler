@@ -14,6 +14,7 @@
 #import "Venue.h"
 #import "Location.h"
 #import "PPMapViewController.h"
+#import "AppDelegate.h"
 
 static NSString *const kCLIENTID = @"SBBS3V3OESBOWFN31TZHNGGWWWQKATYH2TXOU5BCK25MQSRE";
 static NSString *const kCLIENTSECRET = @"IO1UMEGESICFUA2CX3SC0EL5R2UVYLWZPXSVZZ0ZR2DWZYEC";
@@ -66,6 +67,10 @@ static NSString *const kCLIENTSECRET = @"IO1UMEGESICFUA2CX3SC0EL5R2UVYLWZPXSVZZ0
     [self.locationManager startUpdatingLocation];
 }
 
+- (IBAction)menuAction:(UIBarButtonItem *)sender {
+    [[self drawControllerFromAppDelegate] toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
 #pragma mark - Navigation 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -115,6 +120,14 @@ static NSString *const kCLIENTSECRET = @"IO1UMEGESICFUA2CX3SC0EL5R2UVYLWZPXSVZZ0
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"listToMapSegue" sender:indexPath];
+}
+
+#pragma mark - Helper Methods
+
+- (MMDrawerController *) drawControllerFromAppDelegate
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.drawerController;
 }
 
 @end

@@ -97,9 +97,9 @@
     for (MKRoute *route in self.steps) {
         [self.directionsMapView addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
         
-        for (MKRouteStep *step in route.steps) {
-            NSLog(@"step instructions %@", step.instructions);
-        }
+//        for (MKRouteStep *step in route.steps) {
+//            NSLog(@"step instructions %@", step.instructions);
+//        }
     }
 }
 

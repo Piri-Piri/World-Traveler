@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "PPMenuViewController.h"
+#import "PPListViewController.h"
+#import "MMDrawerVisualState.h"
 
 @interface AppDelegate ()
 
@@ -14,10 +17,35 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"WorldTravelerModel"];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    PPMenuViewController *menuViewController = (PPMenuViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"MenuViewControllerID"];
+    PPListViewController *listViewController = (PPListViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"ListViewControllerID"];
+    
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:listViewController leftDrawerViewController:menuViewController];
+    [self.drawerController setMaximumLeftDrawerWidth:240.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    //[self.drawerController setDrawerVisualStateBlock:[MMDrawerVisualState slideVisualStateBlock]];
+    [self.drawerController setDrawerVisualStateBlock:[MMDrawerVisualState slideAndScaleVisualStateBlock]];
+    //[self.drawerController setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self.window setRootViewController:self.drawerController];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"WorldTravelerModel"];
+
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

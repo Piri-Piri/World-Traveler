@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631B549B19CAFA2F00808F86 /* PPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B549A19CAFA2F00808F86 /* PPMenuViewController.m */; };
+		631B549D19CB016C00808F86 /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 631B549C19CB016C00808F86 /* MenuIcon.png */; };
 		63580F2C19C8F56E00740D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63580F2B19C8F56E00740D3E /* main.m */; };
 		63580F2F19C8F56E00740D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63580F2E19C8F56E00740D3E /* AppDelegate.m */; };
 		63580F3519C8F56E00740D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63580F3319C8F56E00740D3E /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		2169560723DA4E03B1EEF328 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		631B549919CAFA2F00808F86 /* PPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMenuViewController.h; sourceTree = "<group>"; };
+		631B549A19CAFA2F00808F86 /* PPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMenuViewController.m; sourceTree = "<group>"; };
+		631B549C19CB016C00808F86 /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
 		63580F2619C8F56E00740D3E /* World Traveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Traveler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63580F2A19C8F56E00740D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63580F2B19C8F56E00740D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		63580F2919C8F56E00740D3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				631B549C19CB016C00808F86 /* MenuIcon.png */,
 				63580F5119C8F64500740D3E /* World Traveler-Prefix.pch */,
 				63580F2A19C8F56E00740D3E /* Info.plist */,
 				63580F2B19C8F56E00740D3E /* main.m */,
@@ -190,6 +196,8 @@
 				63EEBFD719CA08CC00742022 /* PPDirectionsViewController.m */,
 				63EEBFD919CA289700742022 /* PPDirectionsListViewController.h */,
 				63EEBFDA19CA289700742022 /* PPDirectionsListViewController.m */,
+				631B549919CAFA2F00808F86 /* PPMenuViewController.h */,
+				631B549A19CAFA2F00808F86 /* PPMenuViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -358,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631B549D19CB016C00808F86 /* MenuIcon.png in Resources */,
 				63580F3519C8F56E00740D3E /* Main.storyboard in Resources */,
 				63580F3719C8F56E00740D3E /* Images.xcassets in Resources */,
 			);
@@ -411,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63580F6E19C8F66900740D3E /* Venue.m in Sources */,
+				631B549B19CAFA2F00808F86 /* PPMenuViewController.m in Sources */,
 				63580F6F19C8F66900740D3E /* WorldTravelerModel.xcdatamodeld in Sources */,
 				63580F8219C8F91700740D3E /* AFMMRecordResponseSerializer.m in Sources */,
 				63580F2F19C8F56E00740D3E /* AppDelegate.m in Sources */,

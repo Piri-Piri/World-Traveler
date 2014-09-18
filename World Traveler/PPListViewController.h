@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)refreshAction:(UIBarButtonItem *)sender;
+- (IBAction)menuAction:(UIBarButtonItem *)sender;
 
 @end
 
